@@ -1,0 +1,97 @@
+.sensor-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.sensor-card:hover {
+    transform: translateY(-5px);
+}
+
+.sensor-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.timestamp {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+#loading {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sensor-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #f1f8e9 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    margin: 1rem 0;
+}
+
+#plant-svg img, #plant-svg svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+}
+
+.display-5 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#sensor-status {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#last-updated {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+        border-radius: 1rem;
+    }
+    .display-5 {
+        font-size: 1.5rem;
+    }
+    #plant-svg img, #plant-svg svg {
+        max-width: 90vw;
+        border-radius: 0.7rem;
+    }
+} 
